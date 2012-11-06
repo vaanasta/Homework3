@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #E6E6E6;
+	overflow-x:hidden;
+}
+
+.currentImgDiv{
+	margin-left:300px;
+}
+
+#gallery{
+	max-width: 90%;
+	position:relative;
+	top: 50px;
+	left: 100px;
+}
+
+.thumbnail{
+	float:left;
+}
+
+.thumbnail:hover{
+	float:left;
+	
+}
+
+.thumbnail img{
+	height:110px;
+	width:auto;
+}
+
+.thumbnail_cell{
+	float:left;
+	border:3px solid black;
+	padding:0px;
+	cursor: hand;
+	cursor: pointer;
+	/*border-color:#E6E6E6;*/
+}
+
+.thumbnail_cell:hover{
+	float:left;
+	border:3px solid;
+	border-color:#8fd300;*/
+	padding:0px;
+}
+
+#photoshare_logo{
+	position:fixed;
+	top: 70px;
+	left: 20px;
+}
+
+#main_black,#main_green{
+	position:fixed;
+	top: 350px;
+	left: 20px;
+	
+}
+
+#upload_black,#upload_green{
+	position:fixed;
+	top: 420px;
+	left: 20px;
+	filter: black;
+}
+
+#login_black,#login_green{
+	position:fixed;
+	top: 490px;
+	left: 20px;
+}
+
+#register_black,#register_green{
+	position:fixed;
+	top: 560px;
+	left: 20px;
+}
+
+#main_green,#upload_green,#login_green,#register_green{
+	opacity:0;
+	filter:alpha(opacity=0); /* For IE8 and earlier */
+}
+
+#main_green:hover,#upload_green:hover,#login_green:hover,#register_green:hover{
+	opacity:1;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+}
