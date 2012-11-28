@@ -119,11 +119,15 @@
 </table>
 
 <table>
+<jsp:useBean class="moreservlets.listeners.SessionCounter" id="sessionCounter" scope="application" />
 <tr><td><img id="photoshare_logo" src="photoshare_logo.png" width="256" height="256" alt="photoshare_logo" /></td></tr>
 <tr><td><a href="main.jsp"><img id="main_black" src="main_black.png" width="250" height="70" alt="main" /><img id="main_green" src="main_green.png" width="250" height="70" alt="main" /></a></td></tr>
 <tr><td><a href="upload.jsp"><img id="upload_black" src="upload_black.png" width="250" height="70" alt="upload" /><img id="upload_green" src="upload_green.png" width="250" height="70" alt="upload" /></a></td></tr>
 <tr><td><a href="login.jsp"><img id="login_black" src="login_black.png" width="250" height="70" alt="login" /><img id="login_green" src="login_green.png" width="250" height="70" alt="login" /></a></td></tr>
 <tr><td><a href="registration.jsp"><img id="register_black" src="register_black.png" width="250" height="70" alt="register" /><img id="register_green" src="register_green.png" width="250" height="70" alt="register" /></a></td></tr>
+<tr><td>Total Sessions: </td><td><jsp:getProperty name="sessionCounter" property="totalSessionCount" /></td></tr>
+<tr><td>Current Sessions: </td><td><jsp:getProperty name="sessionCounter" property="currentSessionCount" /></td></tr>
+<tr><td>Max Sessions: </td><td><jsp:getProperty name="sessionCounter" property="maxSessionCount" /></td></tr>
 </table>
 
 </body>

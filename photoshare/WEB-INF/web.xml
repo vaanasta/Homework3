@@ -79,4 +79,14 @@
         <welcome-file>main.jsp</welcome-file>
     </welcome-file-list>
 
+    <listener>
+       <listener-class>
+        moreservlets.listeners.SessionCounter
+       </listener-class>
+     </listener>
+
+     <session-config>
+         <session-timeout>10</session-timeout>
+     </session-config>
+
 </web-app>
